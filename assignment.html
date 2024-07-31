@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="get">
+        <input type="button" onclick="sayHello()" value="Click Me">
+    </form>
+    <script>
+        function sayHello(){
+            let promptvalue=prompt("What your location?")
+            if ((promptvalue =='Chandigarh') || (promptvalue=='Punjab') || (promptvalue=='Haryana')){
+                window.location.href='location.html'
+            }
+            else if((promptvalue !='Chandigarh') || (promptvalue!='Punjab') || (promptvalue!='Haryana')){
+                alert("Access Denied")
+            }
+        }
+    </script>
+</body>
+</html>
